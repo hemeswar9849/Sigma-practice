@@ -1,0 +1,218 @@
+body{
+    background: linear-gradient(white, aliceblue);
+    font-family:monospace;
+    /* padding-bottom: 500px; */
+}
+/* #page{
+    display: grid;
+    grid-template-areas: "top top"
+                         "side content"; */
+/* } */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#top{
+    /* grid-area: top; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    a{
+        color: white;
+    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.5px solid black;
+    height: 80px;
+}
+#menu{
+    padding: 2px;
+    border: 2px solid w;
+    border-radius: 5px;
+    color: white;
+    padding-left: 10px;
+}
+#title{
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+#profile{
+     box-sizing: content-box;
+     height: 60px;
+    border: 2px groove rgb(1, 1, 10);
+    margin-right: 10px;
+    border-radius: 50px;
+}
+#nav{
+    position: fixed;
+    width: 100px;
+    border: 1.5px solid black;
+    background-color: black;
+    color: white;
+    a{
+        color: white;
+    }
+    top: 80px;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* 
+.navi{
+    flex-shrink: 1;
+    flex-wrap: wrap;
+} */
+#content{
+    position: relative;
+    z-index: -1;
+    /* grid-area: content; */
+}
+h2{
+
+    position: static;
+    text-decoration: underline;
+    padding-top: 150px;
+
+}
+h3{
+    border: 3px solid black;
+    /* position: relative; */
+    left: 120px;
+    line-height: 30px;
+    width: 400px;
+}
+footer{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    height: 50px;
+    left:0px;
+    bottom: 0px;
+    margin:0px;
+    border:0px;
+    z-index: -1;
+    /* padding-top: 100px; */
+    border-top: 400px solid white;
+    border-bottom: 30px solid black;
+}
+#main{
+    display: grid;
+    /* grid-area: "photo1 descript1 price1"
+                "photo2 descript2 price2"
+                "photo3 descript3 price3"
+                "photo4 descript4 price4"
+                "photo5 descript5 price5"
+                "photo6 descript6 price6"
+                "photo7 descript7 price7"; */
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 1fr;
+    /* align-content: right; */
+    position: relative;
+    z-index: -1;
+    align-content: center;
+    /* border: 3px solid black; */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px 5px;
+    text-align: center;
+    overflow: hidden;
+    /* padding-bottom: 500px; */
+}
+#first{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding-top: 3px;
+    height: 377px;
+    border: 2PX solid black;
+    overflow: hidden;
+}
+#second{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    height: 377px;
+    border: 2PX solid black;
+    overflow: hidden;
+}
+
+#third{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    height: 377px;
+    border: 2PX solid black;
+    overflow: hidden;
+}
+#fourth{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    height: 377px;
+    border: 2PX solid black;
+    overflow: hidden;
+}
+#fifth{
+    grid-row: 4/5;
+    grid-column: 2/3;
+    height: 377px;
+    border: 2PX solid black;
+    overflow: hidden;
+}
+#title1{
+    display: inline;
+    position: relative;
+    top: 100px;
+}
+#sign{
+    float: right;
+    padding-left: 100px;
+    padding-top: 100px;
+    /* border: 1px solid white; */
+}
+input:invalid + #error{
+    display: block;
+}
+#error{
+    color:red;
+    display: none;
+}
+#want{
+    /* position: relative; */
+    padding-top: 80px;
+    float: right;
+    clear: left;
+}
+#image{
+    float: right;
+}
+/* #profileheading{
+    position: relative;
+    top:500px;
+    text-align: center;
+} */
+/* footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box; 
+    margin: 0; 
+} */
