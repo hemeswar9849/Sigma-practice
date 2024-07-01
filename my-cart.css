@@ -47,7 +47,7 @@ a{
 #profile{
      box-sizing: content-box;
      height: 60px;
-    border: 2px groove rgb(1, 1, 10);
+    border: 1px groove black;
     margin-right: 10px;
     border-radius: 50px;
 }
@@ -69,11 +69,22 @@ a{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-/* 
+#profile:hover{
+    background-color: rgb(53, 51, 51);
+}
+#profile{
+    padding: 10px;
+}
 .navi{
-    flex-shrink: 1;
-    flex-wrap: wrap;
-} */
+    /* border: 3px solid black; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 8px;
+}
+.navi:hover{
+    background-color: rgb(53, 51, 51);
+}
 #content{
     position: relative;
     z-index: -1;
@@ -178,15 +189,30 @@ footer{
     top: 100px;
 }
 #sign{
-    float: right;
-    padding-left: 100px;
-    padding-top: 100px;
+    /* float: right; */
+    position: relative;
+    top: 100px;
+    /* z-index: -1; */
+    padding: 10px;
+    /* padding-left: 100px; */
+    /* padding-top: 100px; */
+
     /* border: 1px solid white; */
 }
-input:invalid + #error{
+#signin{
+    position: relative;
+    right: -300px;
+    float: right;
+    
+}
+img:hover{
+   /* background-color: black; */
+   /* border: 1px solid rgb(53, 51, 51); */
+}
+input:invalid + span{
     display: block;
 }
-#error{
+span.error{
     color:red;
     display: none;
 }
@@ -198,6 +224,20 @@ input:invalid + #error{
 }
 #image{
     float: right;
+    position: relative;
+    /* top:0px;s */
+    /* left: 0px; */
+    right: -400px;
+}
+#refer{
+    float:right;
+    position: relative;
+    top:-30px;
+}
+#refer1{
+    float: right;
+    position: relative;
+    top: -30px;
 }
 /* #profileheading{
     position: relative;
