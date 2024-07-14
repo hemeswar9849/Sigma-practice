@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Ball Animation</title>
+    <style>
+        .container{
+            margin: 50px auto;
+            height: 80vh;
+            width: 80vw;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: flex-end;
+        }
+        .box{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: red;
+            box-shadow: 0px 0px 10px;
+        }
+        .box{
+            animation: XDirectionAnimation 10s ease-in-out infinite alternate,
+            YDirectionAnimation 3s ease-in-out infinite alternate
+            ;
+        }
+        @keyframes XDirectionAnimation {
+            0%{
+                left: 0;
+                transform: rotate(0deg);
+            }
+            50%{
+                left: 90%;
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes YDirectionAnimation {
+            0%{
+                bottom: 0;
+            }
+            25%{
+                bottom: 100%;
+            }
+            50%{
+                bottom: 0%;
+            }
+            75%{
+                bottom: 100%;
+            }
+            100%{
+                bottom: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
