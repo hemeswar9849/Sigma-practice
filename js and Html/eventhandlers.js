@@ -11,7 +11,7 @@ a.addEventListener("click", (e)=>{
     // b.innerHTML  = "You clicked on me"
     // document.body.append(b)
     let c = document.getElementById("container")
-    c.insertAdjacentHTML("afterbegin", "n")
+    c.insertAdjacentHTML("afterbegin", "p")
 })
 a.removeEventListener("click", (e)=>{
     // let b = document.createElement("p")

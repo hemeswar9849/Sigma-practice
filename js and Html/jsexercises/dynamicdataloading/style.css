@@ -1,0 +1,42 @@
+.container{
+    margin: auto;
+    margin-top: 100px;
+    width:90vw;
+    height: 15vh;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 2px;
+}
+#thumbnail{
+    padding: 5px;
+    border-radius: 10px;
+}
+.container img{
+    float: left;
+}
+
+#firstline{
+    color: white;
+    font-size: 8px;
+    padding: 10px;
+}
+#secondline{
+    color: rgb(224, 219, 211);
+    font-size: 5px;
+    display: flex;
+    gap: 2px;
+}
+#time{
+    background-color: black;
+    position: absolute;
+    top: 143px;
+    left: 92px;
+    height: 10px;
+    width: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    font-size: 7px;
+
+}
+
