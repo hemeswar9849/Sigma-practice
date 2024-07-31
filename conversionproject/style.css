@@ -24,6 +24,7 @@ body{
 }
 .select{
     margin-top: 20px;
+    display: inline-block;
 }
 .container #btn{
     background-color: #dad7cd;

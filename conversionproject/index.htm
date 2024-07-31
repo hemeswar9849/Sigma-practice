@@ -13,25 +13,22 @@
             <label for="amount">Amount:</label>
             <input type="number" value="100" name="amount" id="amount">
             <div class="select">
-                <img src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/png1000px/us.png" alt="flags">
+                <img src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/png1000px/us.png" alt="">
                 <select name="form" id="from">
-                    <option value="IN">IN</option>
-                    <option value="US">US</option>
-                    <option value="AUD">AUD</option>
                 </select>
+            </div>
+            <div class="select">
                 <img src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/png1000px/in.png" alt="flags">
-                <select name="to" id="to">
-                    <option value="IN">IN</option>
-                    <option value="US">US</option>
-                    <option value="AUD">AUD</option>
+                <select name="to" id="to" value>
                 </select>
             </div>
         </form>
         <div class="output">
-            1 USD = 83 INR
+            1 USD = 83INR
         </div>
         <button id="btn">Convert the Money</button>
     </div>
+    <script src="countrylist.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
