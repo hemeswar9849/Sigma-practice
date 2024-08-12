@@ -1,28 +1,22 @@
-let arr = [7, 7, 7, 8, 8, 1, 1, 2, 6, 2, 3, 3, 4, 4, 5, 5, 6, 6]
-let nArr = []
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-    if (nArr[0] === undefined) {
-        nArr.push(arr[0])
+let arr1 = [7, 7, 7, 8, 8, 1, 1, 2, 6, 2, 3, 3, 4, 4, 5, 5, 6, 6]
+let newArray = []
+for (let arr1Index = 0; arr1Index < arr1.length; arr1Index++) {
+    if (newArray[0] === undefined) {
+        newArray.push(arr1[0])
     }
     let j = 0;
-    while (j < nArr.length) {
-        if (nArr[j] === arr[i]) {
+    while (j < newArray.length) {
+        if (newArray[j] === arr1[arr1Index]) {
             break;
         } else {
             j++;
-            if (j === nArr.length) {
-                nArr.push(arr[i])
+            if (j === newArray.length) {
+                newArray.push(arr1[arr1Index])
             }
         }
     }
 }
-console.log(nArr);
-let i = 0;
-while (i < nArr.length) {
-    
-    i++;
-}
-console.log(nArr);
+console.log(arr1);
+console.log(newArray);
 
 
