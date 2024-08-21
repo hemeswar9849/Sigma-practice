@@ -1,4 +1,5 @@
-const AN_INTEGER = 1234;
-
-let temp = AN_INTEGER;
-console.log(temp % 10);
+let aMatrix = [
+    [1, 2, 3],
+    [4, 5, 6]
+];
+console.log(aMatrix[0][0]);

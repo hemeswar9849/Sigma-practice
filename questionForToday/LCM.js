@@ -1,5 +1,21 @@
-let A_NUMBER = 1;
-let ANOTHER_NUMBER = 1;
+const A_NUMBER = 100;
+const ANOTHER_NUMBER = 155;
+let maxNumber;
+if(A_NUMBER < ANOTHER_NUMBER){
+    maxNumber = ANOTHER_NUMBER;
+} else {
+    maxNumber = A_NUMBER;
+}
+
+while(true){
+    if(maxNumber % A_NUMBER === 0 && maxNumber % ANOTHER_NUMBER === 0){
+        break
+    }
+    maxNumber++;
+}
+console.log(maxNumber);
+
+
 
 let undefinedValue;
 if (A_NUMBER === 0 && ANOTHER_NUMBER === 0) {

@@ -1,4 +1,4 @@
-const AN_INTEGER = -12345;
+const AN_INTEGER = 10;
 
 let temp = AN_INTEGER;
 

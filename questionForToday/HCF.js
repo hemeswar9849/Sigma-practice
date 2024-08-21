@@ -1,20 +1,20 @@
 "use strict"
-const A_NUMBER = 8;
-const ANOTHER_NUMBER = 0;
+const A_NUMBER = 108;
+const ANOTHER_NUMBER = 10;
 
-// if(A_NUMBER > 0 && ANOTHER_NUMBER >0){
-//     let isPrime = true;
-//     for(let index = 1; index < 10; index++){
-//         for(let index2 = 2; index2 < index; index2++){
-//             if(index % index2 === 0){
-//                 isPrime = false;
-//             }
-//         }
-//         if(isPrime){
-//             console.log(index);
-//         }
-//     }
-// }
+let minNumber;
+if(A_NUMBER < ANOTHER_NUMBER){
+    minNumber = A_NUMBER;
+} else {
+    minNumber = ANOTHER_NUMBER;
+}
+let hcf;
+for(let index = 1; index <= minNumber; index++){
+    if(A_NUMBER % index === 0 && ANOTHER_NUMBER % index === 0){
+        hcf = index;
+    }
+}
+console.log(hcf);
 
 let commonFactors = [];
 
