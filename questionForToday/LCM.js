@@ -1,6 +1,10 @@
 const A_NUMBER = 100;
 const ANOTHER_NUMBER = 155;
+
 let maxNumber;
+
+//first method
+
 if(A_NUMBER < ANOTHER_NUMBER){
     maxNumber = ANOTHER_NUMBER;
 } else {
@@ -9,13 +13,13 @@ if(A_NUMBER < ANOTHER_NUMBER){
 
 while(true){
     if(maxNumber % A_NUMBER === 0 && maxNumber % ANOTHER_NUMBER === 0){
-        break
+        break;
     }
     maxNumber++;
 }
 console.log(maxNumber);
 
-
+//second method
 
 let undefinedValue;
 if (A_NUMBER === 0 && ANOTHER_NUMBER === 0) {

@@ -2,6 +2,8 @@
 const A_NUMBER = 108;
 const ANOTHER_NUMBER = 10;
 
+
+//first method
 let minNumber;
 if(A_NUMBER < ANOTHER_NUMBER){
     minNumber = A_NUMBER;
@@ -15,6 +17,9 @@ for(let index = 1; index <= minNumber; index++){
     }
 }
 console.log(hcf);
+
+
+//second method
 
 let commonFactors = [];
 
