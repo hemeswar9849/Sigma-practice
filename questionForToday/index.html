@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        .aClass{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="heading">Phone Book</h1>
+        <h4 class="family">Mother</h4>
+        <h4 class="family">Father</h4>
+        <h4 class="family">Sister</h4>
+        <h4 class="friends">Jagadeesh</h4>
+        <h4 class="friends">Eswar</h4>
+        <h4 class="friends">Ravi</h4>
+        <h4 class="friends">Madhu</h4>
+        <h4 class="friends">Mohan Sai</h4>
+        <button id="hemes" class="hemes hii click me">Click here!</button>
+    </div>
+    <script>
+        let noner = document.querySelector('#hemes');
+        console.log(noner.className);
+        noner.classList.add('subBros', 'hiSubBros');
+        noner.classList.replace('hiSubBros','subscribers');
+        // console.log(noner.classList.contains('subBros'));
+        console.log(noner.classList.toggle('aClass'));
+    </script>
+</body>
+
+</html>
