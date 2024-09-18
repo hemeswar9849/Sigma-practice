@@ -53,5 +53,5 @@ button.addEventListener("click", async () => {
 })
 document.addEventListener("DOMContentLoaded", () => {
     let from = document.querySelector("#from");
-    let usd = document.querySelector("#from option").value = 
+    // let usd = document.querySelector("#from option").value = 
 })
