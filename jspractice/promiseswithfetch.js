@@ -12,9 +12,11 @@ const fetchTheData = () => {
   });
 };
 
-fetchTheData().then(resolved => {
-  console.log(resolved.country_name);
-})
-.catch(error => {
-  console.log(error);
-});
+// fetchTheData().then(resolved => {
+//   console.log(resolved.country_name);
+// })
+// .catch(error => {
+//   console.log(error);
+// });
+
+
