@@ -2,7 +2,7 @@ const arr = [1, 2, 3, 4];
 
 const some = (array, callback) => {
   for(let index = 0; index < arr.length; index++){
-    if(callback(arr[index], index, array)){
+    if(callback(arr[index], index, arr)){
       return true;
     }
   }
