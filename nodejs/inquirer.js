@@ -1,17 +1,15 @@
 const inquirer = require('inquirer');
 
-
 const answer = (answer) => {
-  console.log(answer.a, typeof answer.a++);
-  // console.log(answer.a++);
+  console.log(answer.a, typeof answer.a);
 };
 
 inquirer
   .prompt([
     {
-      type: 'input',
+      type: 'number',
       name: 'a',
-      message: 'Enter the number'
+      message: 'Enter the option'
     }
   ])
   .then(answer);
