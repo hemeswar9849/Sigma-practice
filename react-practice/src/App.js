@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+import NavigationBar from 'components/navbar/navbar';
+import greet from 'utils/hi';
 
 const Hello = ({ name, studyNow }) => {
   return (
@@ -19,6 +20,7 @@ function App() {
   const students = ['hemes', 'mohan sai', 'Jagadheesh', 'manish'];
   return (
     <div className="App" style={style}>
+      <NavigationBar/>
       {students.map((student, index) => {
         return <Hello key={index} name={student} studyNow={'diploma 3rd year'} />
       })}
