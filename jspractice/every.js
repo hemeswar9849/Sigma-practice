@@ -1,4 +1,5 @@
-const arr = [1, 2, 3, 4];
+// const arr = [1, 2, 3, 4];
+const arr = [true , true, true, true];
 
 const every = (arr, callback) => {
   for (let index = 0; index < arr.length; index++) {
@@ -10,7 +11,7 @@ const every = (arr, callback) => {
 };
 
 const condition = (element) => {
-  return element < 2;
+  return element === true;
 };
 
 console.log(arr.every(condition));
