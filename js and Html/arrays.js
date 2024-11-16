@@ -1,7 +1,7 @@
 let uName = "My%20name%20is%20hemeswar%20reddy"
 
 console.log(uName);
-console.log(charCodeAt);
+console.log(uName.charCodeAt(3));
 
 // let charCodeAt = uName.charCodeAt()
 // let lowerCase = uName.toLowerCase()

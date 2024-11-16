@@ -1,6 +1,6 @@
-const arr = [1, 2, 3, 4];
+const arr = ['hemeswar', 'hello', 'meghana', 'hell'];
 
-const some = (array, callback) => {
+const some = (arr, callback) => {
   for(let index = 0; index < arr.length; index++){
     if(callback(arr[index], index, arr)){
       return true;
@@ -10,7 +10,7 @@ const some = (array, callback) => {
 };
 
 const condition = (element) => {
-  return element > 3;
+  return element.includes('helll');
 };
 
 console.log(arr.some(condition));
